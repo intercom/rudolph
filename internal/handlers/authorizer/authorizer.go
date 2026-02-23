@@ -80,10 +80,13 @@ func HandleAuthorizerRequest(request events.APIGatewayProxyRequest) (*events.API
 		if authHeader == "" {
 			authHeader = request.Headers["authorization"]
 		}
+		log.Printf("token validation - authHeader present: %v, syncToken set: %v", authHeader != "", syncToken != "")
 		token := strings.TrimPrefix(authHeader, "Bearer ")
 		if token == "" || token == authHeader || token != syncToken {
+			log.Printf("token validation failed - denying request for machine %s", machineID)
 			return denyResponse("Invalid token"), nil
 		}
+		log.Printf("token validation passed for machine %s", machineID)
 	}
 
 	return allowResponse(machineID), nil
