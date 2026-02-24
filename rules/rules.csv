@@ -1,1 +1,6 @@
 identifier,type,policy,description,custom_msg
+T4SK8ZXCXG,TEAMID,ALLOWLIST,Mac Admins Open Source - Nudge (seen as ALLOW_UNKNOWN in logs),
+483DWKW443,TEAMID,ALLOWLIST,Jamf Inc - MDM agent and associated tooling,
+EQHXZ8M8AV,TEAMID,ALLOWLIST,Google LLC - Chrome / Drive / Meet / all Google-signed apps,
+UBF8T346G9,TEAMID,ALLOWLIST,Microsoft Corporation - Office suite / Teams / Edge,
+2BUA8C4S2C,TEAMID,ALLOWLIST,AgileBits Inc - 1Password,
