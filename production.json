@@ -1,0 +1,7 @@
+{
+  "prefix": "production",
+  "region": "us-east-1",
+  "aws_account_id": "813924112385",
+  "ddb_prefix": "production",
+  "stage_name": "production"
+}
